@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumy</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1 class="logo">Perfumy</h1>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <button id="closeSidebar" class="close-sidebar">&times;</button>
+      <h2>Perfumy</h2>
+      <button class="signin-btn">Sign In</button>
+      <ul class="sidebar-links">
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Sign In Modal -->
+  <div class="modal" id="signinModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Sign In</h2>
+      <form id="signinForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" id="loginBtn">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <!-- Search Bar -->
+  <div class="searchbar" id="home">
+    <input id="searchInput" type="text" placeholder="Search products..." />
+  </div>
+
+  <!-- Products Section -->
+  <div class="products" id="products">
+    <div class="box">
+      <img src="perfumy3.jpg" alt="Bella Vita" class="product-img">
+      <p class="product-name">Bella Vita</p>
+      <p class="product-price">₹599 <span class="discount">20% OFF</span></p>
+    </div>
+
+    <div class="box">
+      <img src="perfumy4.jpg" alt="Carlton London" class="product-img">
+      <p class="product-name">Carlton London</p>
+      <p class="product-price">₹911 <span class="discount">30% OFF</span></p>
+    </div>
+
+    <div class="box">
+      <img src="perfumy6.jpg" alt="Skinn Titan" class="product-img">
+      <p class="product-name">Skinn By Titan Celeste Eau De Parfum</p>
+      <p class="product-price">₹1,494 <span class="discount">25% OFF</span></p>
+    </div>
+
+    <div class="box">
+      <img src="perfumy8.jpg" alt="Eau de Parfum" class="product-img">
+      <p class="product-name">Eau de Parfum</p>
+      <p class="product-price">₹8,300 <span class="discount">10% OFF</span></p>
+    </div>
+
+    <div class="box">
+      <img src="perfumy10.jpg" alt="Bvlgari Jasmin Noir Edp" class="product-img">
+      <p class="product-name">Bvlgari Jasmin Noir Edp</p>
+      <p class="product-price">₹8,900 <span class="discount">10% OFF</span></p>
+    </div>
+
+    <div class="box">
+      <img src="perfumy02.jpg" alt="Calvin Klein" class="product-img">
+      <p class="product-name">Calvin Klein</p>
+      <p class="product-price">₹5,864 <span class="discount">15% OFF</span></p>
+    </div>
+  </div>
+
+  <!-- Product Fullscreen Modal -->
+  <div class="image-modal" id="imageModal">
+    <span class="close-img-modal" id="closeImgModal">&times;</span>
+    <img id="modalImg" alt="Product Image"/>
+    <p id="modalProductName"></p>
+    <div class="modal-controls">
+      <button class="qty-btn minus">-</button>
+      <span class="qty">1</span>
+      <button class="qty-btn plus">+</button>
+      <button class="add-to-cart-btn">ADD TO CART</button>
+      <button class="go-to-cart-btn">GO TO CART</button>
+    </div>
+  </div>
+
+  <!-- Chat Button -->
+  <button class="message-btn" id="openMsgBtn">💬</button>
+
+  <!-- Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <h3>Perfumy Chat</h3>
+      <span id="closeMsgBtn">&times;</span>
+    </div>
+    <div class="chat-body">
+      <p>Welcome to Perfumy! 💐</p>
+      <p>How can we help you today?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <h1>About Us</h1>
+    <p>Popular Perfume Categories:</p>
+    <p>
+      Perfume | Perfume For Women | Perfume Gift Sets For Women | Perfume Gift Sets For Men | 
+      Floral Perfumes For Ladies | Perfume Gift Sets | Perfume Gifting | Gift Cards | Perfume Kits | 
+      Perfume Collections | 100ml Perfumes | 50ml Perfumes | 20ml Perfumes | Eau De Parfum | Eau De Toilette | 
+      Deodorants | Fragrances | Body Mists | Woody Fragrance | Floral Fragrance | Amber Fragrance | 
+      Citrus Fragrance | Daily Perfumes | Classic Fragrances | Oriental Fragrance | Caramel Fragrance | 
+      Marine Fragrance | Fougere Fragrance | Best Citrus Perfumes
+    </p>
+    <p>Buy perfumes for Men at the best prices online</p>
+    <p>Discover a captivating range of perfumes for men at unbeatable prices online.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Social Links Section -->
+      <div class="social-links">
+        <span class="connect-title">Follow and Connect Us</span>
+        <div class="social-icons">
+          <a href="tel:+916381853505"><i class="fas fa-phone"></i></a>
+          <a href="https://www.instagram.com/__tho_fii" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/916381853505" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Help Section -->
+      <span class="information-title">Help & Information</span>
+      <div class="help-font">
+        <a href="javascript:void(0)" class="aboutLink">About Us</a>
+        <a href="javascript:void(0)" class="deliveryLink">Delivery Info</a>
+        <a href="javascript:void(0)" id="openHelpModal">Help & Contact</a>
+        <a href="javascript:void(0)" class="trackLink">Track Order</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Perfumy. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- About Us Fullscreen Modal -->
+  <div id="aboutModal" class="about-modal">
+    <div class="about-modal-content">
+      <span id="closeAboutModal" class="close-modal">&times;</span>
+      <h2>About Us</h2>
+      <p>Popular Perfume Categories:</p>
+      <p>
+        Perfume | Perfume For Women | Perfume Gift Sets For Women | Perfume Gift Sets For Men | 
+        Floral Perfumes For Ladies | Perfume Gift Sets | Perfume Gifting | Gift Cards | Perfume Kits | 
+        Perfume Collections | 100ml Perfumes | 50ml Perfumes | 20ml Perfumes | Eau De Parfum | 
+        Eau De Toilette | Deodorants | Fragrances | Body Mists | Woody Fragrance | Floral Fragrance | 
+        Amber Fragrance | Citrus Fragrance | Daily Perfumes | Classic Fragrances | Oriental Fragrance | 
+        Caramel Fragrance | Marine Fragrance | Fougere Fragrance | Best Citrus Perfumes
+      </p>
+    </div>
+  </div>
+
+  <!-- Delivery Fullscreen Modal -->
+  <div id="deliveryModal" class="delivery-modal">
+    <div class="delivery-modal-content">
+      <span id="closeDeliveryModal" class="close-modal">&times;</span>
+      <h2>Delivery Information</h2>
+      <span>Order Delivery and Shopping</span>
+      <p>My Account</p>
+      <p>Warranty</p> 
+      <p>Payment</p>
+      <p>Returns and Exchange</p> 
+      <p>Questions on COD</p>
+      <p>International Shipping</p> 
+    </div>
+  </div>
+
+  <!-- Help & Contact Fullscreen Modal -->
+  <div id="helpModal" class="help-modal">
+    <div class="help-modal-content">
+      <span id="closeHelpModal" class="close-modal">&times;</span>
+      <h2>Help & Contact</h2>
+
+      <div class="help-line">
+        <i class="fas fa-envelope"></i>
+        <span>Email:</span>
+        <a href="mailto:first@perfumy.in">first@perfumy.in</a>
+      </div>
+
+      <div class="help-line">
+        <i class="fas fa-phone"></i>
+        <span>Call:</span>
+        <a href="tel:+911234567890">+91 1234567890</a>
+      </div>
+
+      <div class="help-line">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat:</span>
+        <a href="https://wa.me/911234567890" target="_blank">WhatsApp Chat</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Track Order Modal -->
+  <div id="trackModal" class="track-modal">
+    <div class="track-modal-content">
+      <span id="closeTrackModal" class="close-modal">&times;</span>
+      <h2>Track Your Order</h2>
+      <form id="trackForm" class="track-form">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="orderNumber">Order Number</label>
+        <input type="text" id="orderNumber" name="orderNumber" placeholder="Enter your order number" required>
+
+        <button type="submit">Track Order</button>
+      </form>
+    </div>
+  </div>
+   
+
+  <script src="./script.js"></script>
+</body>
+</html>
